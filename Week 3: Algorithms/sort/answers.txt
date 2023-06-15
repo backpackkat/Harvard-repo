@@ -1,0 +1,130 @@
+sort1 uses: Bubble sort
+
+How do you know?: sort1 did better than others on random5000.txt when compared to others.
+
+sort2 uses: Merge sort
+
+How do you know?: After figuring out sort1 and sort3, I used the process of elimination to deduce sort2 was Merge sort.
+
+sort3 uses: Selection sort
+
+How do you know?: sort3 did the best on both random5000.txt and reversed10000.txt files.
+
+
+
+
+
+****************************************************************
+Basic Instructions:
+1. Choose 1 text file
+2. Run all 3 sorts on the same file
+3. Time the sorts & compare Real values
+4. Repeat process on multiple files until proper deductions can be made re: which algorithm each sort uses (sort 1/2/3 uses Bubble/Merge/Selection)
+5. Explain "how do you know" for each sort
+
+Detailed Explanation:
+We want to compare the REAL value (not the user or sys values below it) because 'real' shows us how long each algorithm actually takes to sort the respective file.Regardless of the system you're operating, or the competency of the user. You can straight compare the speed of the algorithms and decide--sight unseen--which is which.
+
+sort1: Bubble sort(slowest)
+
+sort2: Selection sort(middle)
+
+sort3: Merge sort (fastest)
+
+To compare & decipher which algo is contained within sort1/sort2/sort3, we must compare various run times they take to sort the same file (or same amount of data).
+
+In order to do this, we can take the same 1 file, ie random5000.txt, and run each sort on it.
+
+Sort 1: Bubble
+Sort 2: Merge
+Sort 3: Selection
+
+The most efficient sorting method we've learned so far in most cases is the Merge Sort. Therefore by looking at the times below, we can see that
+Sort2* is confirmed (as seen in the Test 2 data below) as Merge Sort.
+
+To be *sure*, I compared these results with a larger file in the dataset, reversed10000.txt. The results are below in Test 2 and confirm my earlier findings.
+
+
+Test 1: time ./sort_* random5000.txt
+Sort1* (Bubble)
+real    0m0.080s
+user    0m0.050s
+sys     0m0.025s - 3rd
+
+Sort2* (Merge)
+real    0m0.025s - 1st or fastest sort, which is what we're looking for (out of the 3 algorithms we're comparing against each other in this Lab)
+user    0m0.012s
+sys     0m0.008s
+
+Sort3* (Selection)
+real    0m0.048s
+user    0m0.029s
+sys     0m0.017s - 2nd
+
+
+Test 2: time ./sort_* reversed10000.txt - this a Confirmation Test to ensure that I had run the formulas correctly in Test1 on a different file, with separate data, with the same algorithms. Now I can replicate/confirm results, compare r values, determine whether the order of algorithms have changed from slowest to fastest (it has not).
+
+Sort1* (Bubble)
+real    0m0.259s - fastest
+user    0m0.202s
+sys     0m0.033s
+
+Sort2* (Merge)
+real    0m0.073s - slowest/3rd
+user    0m0.003s
+sys     0m0.040s
+
+Sort3* (Selection)
+real    0m0.185s - mid
+user    0m0.107s
+sys     0m0.039s
+
+
+Test 3: time ./sort_* sorted5000.txt - For Test 3, I wanted to see if an ordered list vs randomized numbers had any effect on the R(real) value, that is the speed in which the various algorithms were able to organize the information. I chose the both the smallest and the largest possible ordered list files, 'sorted5000.txt' & 'sorted50000.txt'.
+
+Sort1* (Bubble)
+real    0m0.064s - 3rd
+user    0m0.003s
+sys     0m0.014s
+Sort2* (Merge)
+real    0m0.049s - 1st
+user    0m0.007s
+sys     0m0.017s
+Sort3* (Selection)
+real    0m0.056s - 2nd
+user    0m0.026s
+sys     0m0.021s
+
+time ./sort_* sorted50000.txt
+Sort1
+real    0m1.334s - 2nd
+user    0m0.032s
+sys     0m0.167s
+Sort2
+real    0m1.074s - 1st
+user    0m0.043s
+sys     0m0.166s
+Sort3
+real    0m4.221s - 3rd
+user    0m2.835s
+sys     0m0.140s
+
+*******
+Basic Definitions of 3 Sorting Types:
+-Selection sort iterates through the unsorted portions of a list, selecting the smallest element each time and moving it to its correct location.
+
+-Bubble sort compares pairs of adjacent values one at a time and swaps them if they are in the incorrect order. This continues until the list is sorted.
+
+-Merge sort recursively divides the list into two repeatedly and then merges the smaller lists back into a larger one in the correct order.
+
+files used in lab3:
+answers.txt
+reversed10000.txt
+sorted50000.txt
+random10000.txt
+reversed5000.txt
+random5000.txt
+reversed50000.txt
+sorted10000.txt
+random50000.txt
+sorted5000.txt

@@ -1,0 +1,5 @@
+I would say I'm not qualified to speak on someone else's audio auras, as they are entirely subjective, and isn't the point of music to enjoy it?
+
+What I will say is it appears this individual enjoys popular, more high energy music in general.
+
+Another way you could calculate would be to use other values than energy, valence, and danceability. How about speechiness vs loudness vs duration? That might tell you whether someone enjoys classical music, deep focus/brown noise/celestial music, or even classical. Even swapping one of the first group of values for the second would have an interesting impact here.
