@@ -1,0 +1,25 @@
+Times:
+
+10 simulations: 0m0.028s
+100 simulations: 0m0.027s
+1000 simulations: 0m0.035s
+10000 simulations: 0m0.099s
+100000 simulations: 0m0.752s
+1000000 simulations: 0m7.245s
+
+
+Questions:
+
+Q: Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+A: I hypothesized the time results would be linear speed (Fast -- Slow in relation as the size of the simulations increased.
+The larger the number of iterations to run, the slower it would be.
+Once it got to only 100 sims, my theory was proven incorrect, and was more inconsistent, as you can see above.)
+Even more surprising was that the speed only started to decrease significantly once again once the highest number of iterations were run.
+
+Q: Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+A: Since almost all my numbers came back under 1 second, I'd run them all except 100k. But if I had a slower connection,
+I'd run it to the point where I had at least 3 data points to compare, or it starts to become cost prohibitive. The last set was the slowest (and would therefore probably be the most expensive.)
+
