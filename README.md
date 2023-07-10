@@ -1,5 +1,4 @@
-All my work (Labs, Problem Sets & Challenges) completed as a part of my post-graduate work attending Harvard University, School of Engineering and Applied Sciences
-[https://cs50.harvard.edu/x/2023/syllabus/].
+All my work (Labs, Problem Sets & Challenges) completed as a part of my post-graduate work attending Harvard University, School of Engineering and Applied Sciences.
 
 #### **#Syllabus:**
 Topics included abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. 
