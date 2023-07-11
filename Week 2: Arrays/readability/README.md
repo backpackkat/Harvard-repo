@@ -1,6 +1,6 @@
 ---
 files: [readability.c]
-url: https://cs50.harvard.edu/x/2022/psets/2/readability/README.md
+url: https://cs50.harvard.edu/x/2022/psets/2/readability/
 window: [terminal]
 ---
 
